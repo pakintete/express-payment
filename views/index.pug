@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  
+  div.row
+    div.col-md-3
+    div.col-md-6
+      h1.title-text= title
+      p.title-text Welcome to #{title}
+    div.col-md-3
+
+  form(method='POST' action='/payment')
+    div.row
+      div.col-md-3
+      div.col-md-6
+        div.form-group
+          label(for='version') Version:
+          input#version.form-control(type='text', placeholder='version' name='version')
+        div.form-group
+          label(for='merchant_id') merchant_id:
+          input#merchant_id.form-control(type='merchant_id', placeholder='merchant_id' name='merchant_id')
+        div.form-group
+          label(for='payment_description') payment_description:
+          input#payment_description.form-control(type='payment_description', placeholder='payment_description' name='payment_description')
+        div.form-group
+          label(for='order_id') order_id:
+          input#order_id.form-control(type='order_id', placeholder='order_id' name='order_id')
+        div.form-group
+          label(for='invoice_no') invoice_no:
+          input#invoice_no.form-control(type='invoice_no', placeholder='invoice_no' name='invoice_no')
+        div.form-group
+          label(for='currency') currency:
+          input#currency.form-control(type='currency', placeholder='currency' name='currency')
+        div.form-group
+          label(for='amount') amount:
+          input#amount.form-control(type='amount', placeholder='amount' name='amount')
+        div.form-group
+          label(for='customer_email') customer_email:
+          input#customer_email.form-control(type='customer_email', placeholder='customer_email' name='customer_email')
+        div.form-group
+          label(for='pay_category_id') pay_category_id:
+          input#pay_category_id.form-control(type='pay_category_id', placeholder='pay_category_id' name='pay_category_id')
+        div.form-group
+          label(for='promotion') promotion:
+          input#promotion.form-control(type='promotion', placeholder='promotion' name='promotion')
+        div.form-group
+          label(for='user_defined_1') user_defined_1:
+          input#user_defined_1.form-control(type='user_defined_1', placeholder='user_defined_1' name='user_defined_1')
+        div.form-group
+          label(for='user_defined_2') user_defined_2:
+          input#user_defined_2.form-control(type='user_defined_2', placeholder='user_defined_2' name='user_defined_2')
+        div.form-group
+          label(for='user_defined_3') user_defined_3:
+          input#user_defined_3.form-control(type='user_defined_3', placeholder='user_defined_3' name='user_defined_3')
+        div.form-group
+          label(for='user_defined_4') user_defined_4:
+          input#user_defined_4.form-control(type='user_defined_4', placeholder='user_defined_4' name='user_defined_4')
+        div.form-group
+          label(for='user_defined_5') user_defined_5:
+          input#user_defined_5.form-control(type='user_defined_5', placeholder='user_defined_5' name='user_defined_5')
+        div.form-group
+          label(for='result_url_1') result_url_1:
+          input#result_url_1.form-control(type='result_url_1', placeholder='result_url_1' name='result_url_1')
+        div.form-group
+          label(for='result_url_2') result_url_2:
+          input#result_url_2.form-control(type='result_url_2', placeholder='result_url_2' name='result_url_2')
+        div.form-group
+          label(for='enable_store_card') enable_store_card:
+          input#enable_store_card.form-control(type='enable_store_card', placeholder='enable_store_card' name='enable_store_card')
+        div.form-group
+          label(for='request_3ds') request_3ds:
+          input#request_3ds.form-control(type='request_3ds', placeholder='request_3ds' name='request_3ds')
+        div.form-group
+          label(for='payment_option') payment_option:
+          input#payment_option.form-control(type='payment_option', placeholder='payment_option' name='payment_option')
+        div.form-group
+          label(for='payment_expiry') payment_expiry:
+          input#payment_expiry.form-control(type='payment_expiry', placeholder='payment_expiry' name='payment_expiry')
+        div.form-group
+          label(for='default_lang') default_lang:
+          input#default_lang.form-control(type='default_lang', placeholder='default_lang' name='default_lang')
+        div.form-group  
+          button.btn.btn-primary(type='submit') submit
+      div.col-md-3
+            
